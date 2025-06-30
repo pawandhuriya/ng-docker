@@ -41,7 +41,7 @@ jobs:
           file: Dockerfile
           push: false
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/angulargithubactions:${{ github.sha }}, ${{ secrets.DOCKER_HUB_USERNAME }}/angulargithubactions:latest
-          platforms: linux/arm64t
+          
           
       - name: Build Docker Image
         uses: docker/build-push-action@v2
